@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Splash Screen -->
+  <div id="splashScreen" class="splash-screen">
+  <img src="images/logo.png" class="logo" alt="Logo To-Do List" />
+  <h1>📝 Daily To-Do List</h1>
+  <button id="startBtn">Start</button>
+</div>
+
+  <!-- Main Content -->
+  <div id="mainContent" style="display: none;">
+    
+    <!-- Header: Tanggal & Riwayat -->
+    <div class="header-top">
+      <div id="dateBox">
+  <div id="dayText" class="day-text"></div>
+  <div id="dateText" class="date-large"></div>
+  <div id="monthText" class="month-text"></div>
+</div>
+<div class="history-dropdown">
+        <label for="historySelect">📅 History:</label>
+        <select id="historySelect"></select>
+      </div>
+    </div>
+      </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div id="progressFill" class="progress-fill">0%</div>
+      </div>
+    </div>
+
+    <!-- Input Task -->
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Add new task" />
+      <button id="addBtn">Add</button>
+    </div>
+
+    <!-- List Task -->
+    <ul id="taskList"></ul>
+
+    <!-- Finish Day Button -->
+    <button id="finishBtn">Finish Today</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
